@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejemplo 2 Con DOM</title>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		function obtener_datos(){
+			var temporal = document.getElementById('caja0').value;
+			var decimal = temporal/1
+			cambiar_numeros(decimal);
+		}
+		
+
+	</script>
+</head>
+<body>
+	<form method="POST" action="">
+		<label>Ingresa un Numero Decimal</label>
+		<input type="text" id="caja0" name="caja_decimal">
+		<br>
+		<button onclick="obtener_datos()">Calcular</button>
+	</form>
+</body>
+</html>

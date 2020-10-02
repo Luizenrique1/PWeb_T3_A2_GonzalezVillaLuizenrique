@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejemplo 3</title>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		function obtener_datos(){
+			var cadena = document.getElementById('caja0').value;
+			var letra = document.getElementById('caja1').value;
+
+			ejercicio3(cadena, letra);
+		}
+		
+
+	</script>
+</head>
+<body>
+	<form method="POST" action="">
+		<label>Ingresa una Cadena en Minusculas</label>
+		<input type="text" id="caja0" name="caja_cadena">
+		<br>
+		<label>Ingresa una Letra en Especifico</label>
+		<input type="text" id="caja1" name="caja_letra" maxlength="1">
+		<br>
+		<button onclick="obtener_datos()">Contar</button>
+	</form>
+</body>
+</html>

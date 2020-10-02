@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejemplo 1 CURP Con DOM</title>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">
+		function obtener_datos(){
+			var nombre = document.getElementById('caja0').value;
+			var ape_p = document.getElementById('caja1').value;
+			var ape_m = document.getElementById('caja2').value;
+			var fecha = document.getElementById('caja3').value;
+			var entidad = document.getElementById('caja4').value;
+			var sex = document.getElementById('sexo').value;
+			mostrar_curp(nombre, ape_p, ape_m, fecha, sex, entidad);
+		}
+		
+
+	</script>
+</head>
+<body>
+	<form method="POST" action="">
+		<label>Nombre</label>
+		<input type="text" id="caja0" name="caja_nombre">
+		<br>
+		<label>Apellido Paterno</label>
+		<input type="text" id="caja1" name="caja_apeP">
+		<br>
+		<label>Apellido Materno</label>
+		<input type="text" id="caja2" name="caja_apeM">
+		<br>
+		<label>Fecha De Nacimiento</label>
+		<label>DD</label>
+		<input type="date" id="caja3" name="caja_date">
+		<br>
+        <label>Entidad</label>
+		<input type="text" id="caja4" name="caja_entidad">
+		<br>
+		<input type="radio" id="sexo" value="H">Hombre<br>
+        <input type="radio" id="sexo" value="M">Mujer<br>
+
+		<input type="submit" name="btn" onclick="obtener_datos()">
+	</form>
+</body>
+</html>
